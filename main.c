@@ -3,23 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-void func(void)
+void square(int a)
 {
-	int x;
-	printf("func x is at %p\n",&x);
-	
+	a=a *a;
 } 
 
-int main(int argc, char*argv[])
+int main()
 {
-	int x;
-	
-	printf("main x is at %p\n", &x);
-	func();
-	
-	system("PAUSE");
-	
-	 
-	 
-	return 0;
+	int a=2;
+	square(a);
+	printf("a=%i\n",a);
 }
+
